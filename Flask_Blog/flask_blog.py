@@ -9,10 +9,22 @@ posts = [
     },
 
     {"author" : "Beyonce Knowles",
-     "title": "Cochella 2018",
-     "content": "First Perfomance Entry",
+          "title": "Cochella 2018",
+          "content": "First Perfomance Entry",
+          "date_posted": "April 20, 2018"
+     },
+    {"author" : "SHAN",
+     "title": "HOW TO DROP BITCHES",
+     "content": "HOW TO BE A BITCH",
      "date_posted": "April 20, 2018"
-    }
+     },
+    {"author" : "NEREYA",
+     "title": "HOW TO EXTRA AF BUT NOH",
+     "content": "JUDGE LIKE A QUEEN",
+     "date_posted": "April 20, 2018"
+     },
+
+
 ]
 
 @app.route("/")
@@ -24,6 +36,10 @@ def home():
 @app.route("/about")
 def about():
     return render_template('about.html', title="About")
+
+@app.route("/page2")
+def page2():
+    return render_template('page2.html')
 
 @app.route("/page3")
 def page3():
